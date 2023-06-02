@@ -24,3 +24,6 @@
 
 #define ENCODER_RESOLUTION 4
 #define ENCODER_MAP_KEY_DELAY 10
+
+#define BACKLIGHT_PINS { D2, D3 }
+

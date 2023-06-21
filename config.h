@@ -19,11 +19,11 @@
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
 
-#define ENCODERS_PAD_A { F6 }
-#define ENCODERS_PAD_B { F7 }
+#define ENCODERS_PAD_A { F7 }
+#define ENCODERS_PAD_B { B1 }
 
 #define ENCODER_RESOLUTION 4
 #define ENCODER_MAP_KEY_DELAY 10
 
-#define BACKLIGHT_PINS { D2, D3 }
+#define BACKLIGHT_PINS { F4, F5 }
 

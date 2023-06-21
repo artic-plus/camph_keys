@@ -17,30 +17,30 @@ enum layer_names {
 void backlight_init_ports(void) {
     // Optional - runs on startup
     //   Usually you want to configure pins here
-  setPinOutput(A2);
-  setPinOutput(A3);
-  writePinLow(A2);
-  writePinHigh(A3);
+  setPinOutput(F4);
+  setPinOutput(F5);
+  writePinLow(F4);
+  writePinHigh(F5);
 }
 void backlight_set(uint8_t level) {
     // Optional - runs on level change
     //   Usually you want to respond to the new value
     switch (level){
     case 1:
-      writePinLow(A2);
-      writePinHigh(A3);
+      writePinLow(F4);
+      writePinHigh(F5);
       break;
     case 2:
-      writePinHigh(A2);
-      writePinLow(A3);
+      writePinHigh(F4);
+      writePinLow(F5);
       break;
     case 3:
-      writePinHigh(A2);
-      writePinHigh(A3);
+      writePinHigh(F4);
+      writePinHigh(F5);
       break;
     }
-//  writePin(D2, level && 2);
-//  writePin(D3, level && 1);
+//  writePin(F4, level && 2);
+//  writePin(F5, level && 1);
 }
 
 void backlight_task(void) {
@@ -55,10 +55,10 @@ void keyboard_pre_init_user(void) {
   // Call the keyboard pre init code.
 
   // Set our LED pins as output
-  setPinOutput(D2);
-  setPinOutput(D3);
-  writePinLow(D2);
-  writePinLow(D3);
+  setPinOutput(F4);
+  setPinOutput(F5);
+  writePinLow(F4);
+  writePinLow(F5);
 }
 */
 

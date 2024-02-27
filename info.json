@@ -3,7 +3,7 @@
     "keyboard_name": "camph_keys",
     "maintainer": "artic-plus",
     "bootloader": "caterina",
-    "diode_direction": "COL2ROW",
+    "diode_direction": "ROW2COL",
     "features": {
         "bootmagic": true,
         "command": false,
@@ -20,8 +20,9 @@
     "url": "",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
+        "vid": "0x2037",
+        "pid": "0x2023",
+
     },
     "layouts": {
         "LAYOUT_ortho_2x4": {
